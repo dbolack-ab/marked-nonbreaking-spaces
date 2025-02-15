@@ -12,8 +12,7 @@ export default function() {
             return {
               type   : 'nonbreakingSpaces', // Should match "name" above
               raw    : match[0],     // Text to consume from the source
-              length : match[1].length,
-              text   : ''
+              length : match[1].length
             };
           }
         },

@@ -11,7 +11,7 @@ The basic token is `:>`. Additional spaces may be added by adding additional gre
 const marked = require("marked");
 const markedNonbreakingSpaces = require("marked-nonbreaking-spaces");
 
-marked.use({ extensions: [markedNonbreakingSpaces] });
+marked.use(markedNonbreakingSpaces());
 
 const html = marked.parse(":> This is a single space.\nThis adds :>>>> four!");
 console.log(html);
